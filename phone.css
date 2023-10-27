@@ -1,0 +1,108 @@
+#navbar{
+    flex-direction: column;
+}
+
+#navbar ul li a{
+    font-size: 1rem;
+    padding: 0px 7px;
+    padding-bottom: 8px;
+}
+
+/*Home Section*/
+#home{
+    height: 370px;
+    padding: 3px 28px;
+}
+
+#home::before{
+    height: 480px;
+}
+
+#home p{
+    font-size: 13px;
+}
+
+/*Types Section*/
+#types{
+    flex-direction: column;
+}
+
+.box img{
+    width: 200px;
+}
+
+.box{
+    padding: 14px;
+    margin: 2px 0px;
+    margin-bottom: 20px;
+}
+
+/*Precautions Section*/
+#Precautions{
+    flex-wrap: wrap;
+}
+#measures{
+    flex-direction: column;
+}
+
+/*Contact Us Section*/
+#contactbox form{
+    width: 80%;
+}
+
+.h-prim{
+    font-size: 26px;
+}
+
+#btn{
+    font-size: 13px;
+    padding: 4px 8px;
+}
+
+.box1::before{
+    content:"";
+    position: absolute;
+    background: url('password.png') no-repeat center center/cover;
+    background-size: 200px;
+    height: 200px;
+    width: 150px;
+    z-index: -1;
+    opacity:0.42;
+    padding: 131px 99px 0px 4px;
+}
+
+.box2::before{
+    content:"";
+    position: absolute;
+    background: url('awareness.jpg') no-repeat center center/cover;
+    background-size: 150px;
+    height: 200px;
+    width: 150px;
+    z-index: -1;
+    opacity:0.42;
+    padding: 177px 89px 0px 4px;
+}
+
+.box3::before{
+    content:"";
+    position: absolute;
+    background: url('report.png') no-repeat center center/cover;
+    background-size: 150px;
+    height: 200px;
+    width: 150px;
+    z-index: -1;
+    opacity:0.42;
+    padding: 165px 92px 0px 4px;
+}
+
+.box4::before{
+    content:"";
+    position: absolute;
+    background: url('2factor.png') no-repeat center center/cover;
+    background-size: 150px;
+    height: 200px;
+    width: 150px;
+    z-index: -1;
+    opacity:0.42;
+    padding: 0px 121px 150px 4px;
+}
