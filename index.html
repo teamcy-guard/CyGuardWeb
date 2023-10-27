@@ -1,0 +1,122 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Most Efficient Cyber Security Website | GoSecure</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1150px)" href="phone.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="ourlogo.png" alt="GoSecure">
+        </div>
+        <ul>
+           <li class="item"><a href="#home">Home</a></li>
+           <li class="item"><a href="#types-area">Types</a></li> 
+           <li class="item"><a href="#Precautions">Precautions</a></li>
+           <li class="item"><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="h-prim">Welcome to Cy-Guard</h1>
+       <p> In an ever-changing digital landscape, protecting your online world is essential. GoSecure is your go-to destination for cybersecurity. We offer a simple and effective platform for reporting cyber threats and incidents, helping you ensure a safer digital space. Join us in fortifying the online community. Let's work together to secure the digital world. Explore GoSecure and be a part of our mission to protect the web.</p>
+    </section>
+    <section id="types-area">
+        <h1 class="heading">Types Of Cyber Bullying</h1>
+        <div id="types">
+            <div class="box">
+                <img src="hacker.png" alt="">
+                <h2 class="heading1">Hacking</h2>
+                <p class="center"><b>Hacking is the unauthorized intrusion into computer systems, often involving data manipulation or theft. It spans ethical and malicious activities, emphasizing the pivotal role of cybersecurity in our digitally connected world.</b></p>               
+            </div>
+            <div class="box">
+                <img src="cyberbullying.png" alt="">
+                <h2 class="heading1">Cyber Bullying</h2>
+                <p class="center"><b>Cyberbullying is the harmful use of digital platforms to harass, intimidate, or harm individuals. It spans from online harassment to malicious attacks, highlighting the need for digital safety and awareness.</b></p>               
+            </div>
+            <div class="box">
+                <img src="scam.png" alt="">
+                <h2 class="heading1">Scam</h2>
+                <p class="center"><b>A scam is a deceptive scheme or fraudulent activity aimed at tricking individuals or organizations for personal gain. It takes various forms, emphasizing the importance of vigilance and consumer awareness.</b></p>               
+            </div>
+        </div>
+    </section>
+    <section id="Precautions">
+        <h1 class="heading2">A Secure Tomorrow Starts Today: Precautionary Essentials</h1>
+        <div id="measures">
+            <div class="box1">
+                <h2 class="heading1">Strong Passwords</h2>
+                <p class="center"><b>Strong passwords are the cornerstone of online security, safeguarding your digital identity. They must be complex, combining a mix of letters, numbers, and special characters, and unique for each account to thwart unauthorized access. This diligence helps protect personal and financial information, reducing the risk of cyberattacks and data breaches.</b></p>
+            </div>
+            <div class="box2">
+                <h2 class="heading1">Raising Awareness</h2>
+                <p class="center"><b>Raising awareness about cybersecurity is paramount in the digital age. It empowers individuals with the knowledge to recognize online risks, phishing attempts, and safeguard their privacy. Education and awareness campaigns foster responsible online behavior, helping people make informed choices and protect themselves, ultimately creating a safer online environment.</b></p>               
+            </div>
+            <div class="box3">
+                <h2 class="heading1">Reporting Measures</h2>
+                <p class="center"><b>Reporting measures are fundamental for identifying and mitigating online threats. Users play a critical role by reporting suspicious activities, abuse, or violations of platform rules. This proactive approach fosters a safer digital ecosystem, triggering timely responses from administrators to tackle issues and ensure a secure online experience.</b></p>
+            </div>
+            <div class="box4">
+                <h2 class="heading1">2-Factor Verification</h2>
+                <p class="center"><b>2-Factor verification bolsters online security with an additional layer of authentication, typically involving a code sent to a mobile device. This method adds a robust defense against unauthorized access, reducing the risk of compromised accounts and sensitive information. It's a powerful safeguard for protecting digital identities and privacy.</b></p>               
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h1 class="h-prim">Report Your Case</h1>
+        <div id="contactbox">
+            <form>
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" name="name" id="email" placeholder="myemail@gmail.com">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number: </label>
+                    <input type="phone" name="name" id="phone" placeholder="Enter your phone">
+                </div>
+                <div class="form-group">
+                    <label for="reportcase">What's Your Case?(in short) </label>
+                    <textarea name="case" id="case" cols="30" rows="10" placeholder="Write about your case here"></textarea>
+                </div>
+                <p>Please fill out the following form as well: <a href="https://forms.gle/Mdz3ANYLY5sZjBnj6">Click On This Link</a></p>
+                <center><button id="btn" onclick="sendMail();">Submit</center>
+            </form>
+         </div>
+         <script>
+            //retrieving data
+            document.getElementById("btn").addEventListener("click", function () {
+                const name = document.getElementById("name").value;
+                const email = document.getElementById("email").value;
+                const phone = document.getElementById("phone").value;
+                const message = document.getElementById("case").value; 
+                
+                alert("Name: " + name + "\nEmail: " + email + "\nPhone Number: " + phone + "\nMessage: " + message +"\nMessage Sent Successfully");
+
+                var username = localStorage.setItem("name",name);
+                var em = localStorage.setItem("email",email);
+                var ph = localStorage.setItem("phone",phone);
+                var msg = localStorage.setItem("message",message);
+            });
+        </script>
+
+    </section>
+    <footer>
+        <div class="center">
+           <p> Copyright &copy; www.Cy-Guard.com. All rights reserved!</p>
+           <p>Phone: 8825113913 | Email: <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=teamcyguard@gmail.com">teamcyguard@gmail.com</a>
+           </p>
+        </div>
+    </footer>
+    
+
+
+   
+</body>
+</html>
