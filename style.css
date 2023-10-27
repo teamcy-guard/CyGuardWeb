@@ -1,0 +1,327 @@
+html{
+    scroll-behavior: smooth;
+}
+    
+/*Navigation Bar*/
+#navbar{
+    display: flex;
+    align-items: center;
+    position: :sticky;
+    top: 0px
+}
+
+#navbar::before{
+    content: "";
+    background-color: white;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity:0.7;
+}
+/*Navigation Bar: Logo and Image*/
+#logo{
+    margin: 10px 34px;
+}
+#logo img{
+    height: 50px;
+    margin: 3px 6px;
+    border-radius: 20px;
+}
+/*Navigation bar list styling*/
+
+#navbar ul{
+    display: flex;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    list-style: none;
+}
+
+#navbar ul li a{
+    color: black;
+    display: block;
+    padding: 3px 23px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+#navbar ul li a:hover{
+    color: white;
+    background-color:black;
+}
+
+
+/*Home Section*/
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 650px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content:"";
+    position: absolute;
+    background: url('bg.png') no-repeat center;
+    background-size: auto;
+    height: 642px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.45;
+}
+
+#home h1{
+    color:black;
+    text-align: center;
+    font-family: 'bree serif';
+}
+#home p{
+    color:black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'bree serif'
+}
+
+/*Types Section*/
+#types,#measures{
+    margin:34px;
+    display: flex;
+}
+.box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+}
+
+.box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+
+.box p{
+    font-family: cursive;
+}
+/*Precautions Section*/
+.box1::before{
+    content:"";
+    position: absolute;
+    background: url('password.png') no-repeat center center/cover;
+    background-size: 300px;
+    height: 480px;
+    width: 250px;
+    z-index: -1;
+    opacity:0.42;
+    padding: 0px 4px 0px 4px;
+}
+
+.box1{
+    border: 2px solid black;
+    padding: 34px;
+    margin: 2px 15px;
+    border-radius: 28px;
+    background:none;
+    margin-bottom: 20px;
+}
+
+ 
+.box1 p{
+    font-family: cursive;
+}
+
+.box2::before{
+    content:"";
+    position: absolute;
+    background: url('awareness.jpg') no-repeat center center/cover;
+    background-size: 300px;
+    height: 480px;
+    width: 250px;
+    z-index: -1;
+    opacity:0.65;
+    padding: 25 16px 2px 15px;
+}
+
+.box2{
+    border: 2px solid black;
+    padding: 34px;
+    margin: 2px 15px;
+    border-radius: 28px;
+    background:none;
+    margin-bottom: 20px;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+
+.box2 p{
+    font-family: cursive;
+} 
+
+
+.box3::before{
+    content:"";
+    position: absolute;
+    background: url('report.png') no-repeat center center/cover;
+    background-size: 300px;
+    height: 450px;
+    width: 250px;
+    z-index: -1;
+    opacity:0.45;
+    padding: 0px 16px 0px 15px;
+}
+
+
+.box3{
+    border: 2px solid black;
+    padding: 34px;
+    margin: 2px 15px;
+    border-radius: 28px;
+    background:none;
+    margin-bottom: 20px;
+}
+
+
+.box3 p{
+    font-family: cursive;
+}
+
+.box4::before{
+    content:"";
+    position: absolute;
+    background: url('2factor.png') no-repeat center center/cover;
+    background-size: 300px;
+    height: 450px;
+    width: 250px;
+    z-index: -1;
+    opacity:0.42;
+    padding: 0px 10px 0px 5px;
+}
+
+.box4{
+    border: 2px solid black;
+    padding: 21px;
+    margin: 2px 15px;
+    border-radius: 28px;
+    background:none;
+    margin-bottom: 20px;
+}
+
+ 
+.box4 p{
+    font-family: cursive;
+}
+
+
+.center,.heading2,.heading1,.heading{
+    font-family: 'Bree Serif', serif;
+    text-align: center;
+}
+
+
+/*Contact Section*/
+#contact{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    background: url('contactimg.png') no-repeat center center/cover;
+}
+#contactbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contactbox input, 
+#contactbox textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+} 
+
+#contactbox form{
+    width: 40%;
+}
+
+#contactbox label{
+   font-size: 1.3rem;
+   font-family: 'Bree Serif', serif;
+
+}
+
+#contactbox form p{
+   font-size: 1.3rem;
+   font-family: 'Bree Serif', serif;
+}
+
+#contactbox form p a{
+    text-decoration: none;
+    color: blue;
+    background-color: none;
+
+}
+
+#contactbox form p a:hover{
+    text-decoration: underline;
+}
+h1.h-prim{
+    font-family: 'Bree Serif', serif;
+    text-align: center;
+}
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+
+#btn{
+    
+        padding: 6px 20px;
+        background-color: brown;
+        border: 2px solid black;
+        color: white;
+        margin: 17px;
+        font-size: 1.5rem;
+        border-radius: 10px;
+        cursor:pointer;
+}
+
+#btn:hover{
+    padding: 6px 20px;
+    background-color: lightcoral;
+    border: 2px solid black;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+}
